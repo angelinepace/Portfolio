@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.slider{
+    width: 100%;
+    height: 80vh;
+    aspect-ratio: 16/9;
+    background: black;
+}
+
+.slider-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.slider-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+}
+
+h1{
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.slider-content p{
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.section{
+    padding: 100px 0;
+}
+
+.boxed{
+    max-width: 1280px;
+    margin-inline:auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.dark {
+    background-color: #000;
+    color: #FFF;
+}
+
+/* Styles supplémentaires pour la section projets */
+.realisation, .realisation2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.w40{
+    width: 40%;
+    align-content: center;
+}
+
+.w60{
+    width: 60%;
+    text-align: justify;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.w20{
+    width:25%;
+}
+
+.skill{
+padding: 20px;
+box-sizing: border-box;
+}
+
+.skill img{
+    width: 100px;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.skill h3{
+    margin-top: 10px;
+}
+
+.w100{
+    width: 100%;
+}
+
+.text{
+    text-align: right;
+    font-size: 0.5rem;
+}
+
+.flex space-between{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+.realisation{
+    width: 100%;
+}
+
+#modem, #modem2 {
+    width: 50%;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+
+.realisation2{
+    width: 100%;
+}
+
+.title{
+    margin-bottom: 5%;
+}
+
+.icons{
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.icon{
+    display: block;
+    font-size: 30px;
+}
+
+.value{
+    display: block;
+}
+
+.contact{
+    padding: 15px;
+    box-sizing: border-box;
+    flex: 1;
+    min-width: 0;
+}
+
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    float: left;
+}
+
+.nav-item a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 20px;
+}
+
+#accueil {
+    background-color: #f4f4f4;
+}
+
+#projets {
+    background-color: #000000;
+}
+
+#a-propos {
+    background-color: #ffffff;
+}
+
+/* Media Queries pour l'adaptation mobile */
+@media (max-width: 768px) {
+    .slider-content h1 {
+        font-size: 2rem;
+    }
+    
+    .slider-content p {
+        font-size: 0.9rem;
+    }
+    
+    .boxed {
+        padding: 20px;
+    }
+    
+    .flex {
+        flex-direction: column;
+    }
+    
+    .w40, .w60, .w20 {
+        width: 100%;
+    }
+    
+    .skill img {
+        width: 80px;
+    }
+    
+    .skill h3 {
+        font-size: 1rem;
+    }
+    
+    .contact {
+        margin-bottom: 20px;
+    }
+    
+    .contact:last-child {
+        margin-bottom: 0;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-item a {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        height: 50vh;
+    }
+    
+    .slider-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .slider-content p {
+        font-size: 0.8rem;
+    }
+    
+    .skill img {
+        width: 60px;
+    }
+    
+    .skill h3 {
+        font-size: 0.9rem;
+    }
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #00000041;
+}
